@@ -50,7 +50,6 @@ generate_aux_key() {
   scheme=$2
   dir=$3
   uri=$4
-  echo "DIR: $DIR"
   "$CHAINX" key insert --chain=$CHAIN --key-type "$key_type" -d $dir --scheme "$scheme" --suri "$uri"
   print_address  "$scheme" "$uri"
   print_aux_key  "$scheme" "$uri"
